@@ -1,7 +1,6 @@
 # CPProxy
 
 Для компиляции сделать такие действия:
-1) cd cproxy
-2) cd build
+1) cd build
 3) make
 Та-дам: появлся бинарник cproxy
