@@ -1,0 +1,75 @@
+﻿2025-12-08 11:38:55.597 DEBUG [80642] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=5
+2025-12-08 11:38:55.604 DEBUG [80642] [proxy::Proxy::process_client_connection@307] Writing bytes=2760 fd=5
+2025-12-08 11:38:55.604 DEBUG [80642] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=5
+2025-12-08 11:38:55.604 DEBUG [80654] [proxy::Proxy::process_client_connection@307] Writing bytes=12420 fd=6
+2025-12-08 11:38:55.604 DEBUG [80642] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=5
+2025-12-08 11:38:55.604 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 12420static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download
+2025-12-08 11:38:55.605 DEBUG [80642] [proxy::Proxy::process_client_connection@307] Writing bytes=12420 fd=5
+2025-12-08 11:38:55.605 DEBUG [80654] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=6
+2025-12-08 11:38:55.605 DEBUG [80642] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=5
+2025-12-08 11:38:55.606 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 1380static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download
+2025-12-08 11:38:55.606 DEBUG [80654] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=6
+2025-12-08 11:38:55.606 DEBUG [80654] [proxy::Proxy::process_client_connection@307] Writing bytes=12420 fd=6
+2025-12-08 11:38:55.606 DEBUG [80654] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=6
+2025-12-08 11:38:55.607 DEBUG [80642] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=5
+2025-12-08 11:38:55.607 DEBUG [80654] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=6
+2025-12-08 11:38:55.607 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 2760static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download
+2025-12-08 11:38:55.607 DEBUG [80642] [proxy::Proxy::process_client_connection@307] Writing bytes=12420 fd=5
+2025-12-08 11:38:55.607 DEBUG [80654] [proxy::Proxy::process_client_connection@307] Writing bytes=1380 fd=6
+2025-12-08 11:38:55.608 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 1380static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download
+2025-12-08 11:38:55.608 DEBUG [80642] [proxy::Proxy::process_client_connection@307] Writing bytes=4140 fd=5
+2025-12-08 11:38:55.609 DEBUG [80654] [proxy::Proxy::process_client_connection@307] Writing bytes=2760 fd=6
+2025-12-08 11:38:55.613 DEBUG [80642] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=5
+2025-12-08 11:38:55.614 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 8280static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download
+2025-12-08 11:38:55.615 DEBUG [80654] [proxy::Proxy::process_client_connection@307] Writing bytes=1380 fd=6
+2025-12-08 11:38:55.615 DEBUG [80654] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=6
+2025-12-08 11:38:55.616 DEBUG [80642] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=5
+2025-12-08 11:38:55.616 DEBUG [80642] [proxy::Proxy::process_client_connection@307] Writing bytes=9660 fd=5
+2025-12-08 11:38:55.616 DEBUG [80654] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=6
+2025-12-08 11:38:55.617 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 4140static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download
+2025-12-08 11:38:55.617 DEBUG [80642] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=5
+2025-12-08 11:38:55.617 DEBUG [80654] [proxy::Proxy::process_client_connection@307] Writing bytes=8280 fd=6
+2025-12-08 11:38:55.618 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 1380static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download
+2025-12-08 11:38:55.618 DEBUG [80654] [proxy::Proxy::process_client_connection@307] Writing bytes=4140 fd=6
+2025-12-08 11:38:55.618 DEBUG [80642] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=5
+2025-12-08 11:38:55.621 DEBUG [80642] [proxy::Proxy::process_client_connection@307] Writing bytes=4140 fd=5
+2025-12-08 11:38:55.621 DEBUG [80642] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=5
+2025-12-08 11:38:55.621 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 5520static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download
+2025-12-08 11:38:55.621 DEBUG [80654] [proxy::Proxy::process_client_connection@307] Writing bytes=1380 fd=6
+2025-12-08 11:38:55.622 DEBUG [80642] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=5
+2025-12-08 11:38:55.622 DEBUG [80642] [proxy::Proxy::process_client_connection@307] Writing bytes=1380 fd=5
+2025-12-08 11:38:55.622 DEBUG [80642] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=5
+2025-12-08 11:38:55.623 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 2760static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download
+2025-12-08 11:38:55.623 DEBUG [80654] [proxy::Proxy::process_client_connection@307] Writing bytes=5520 fd=6
+2025-12-08 11:38:55.623 DEBUG [80642] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=5
+2025-12-08 11:38:55.627 DEBUG [80642] [proxy::Proxy::process_client_connection@307] Writing bytes=5520 fd=5
+2025-12-08 11:38:55.628 DEBUG [80654] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=6
+2025-12-08 11:38:55.631 DEBUG [80654] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=6
+2025-12-08 11:38:55.631 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 11040static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download
+2025-12-08 11:38:55.631 DEBUG [80654] [proxy::Proxy::process_client_connection@307] Writing bytes=2760 fd=6
+2025-12-08 11:38:55.631 DEBUG [80642] [proxy::Proxy::process_client_connection@307] Writing bytes=2760 fd=5
+2025-12-08 11:38:55.632 DEBUG [80654] [proxy::Proxy::process_client_connection@307] Writing bytes=11040 fd=6
+2025-12-08 11:38:55.632 DEBUG [80642] [proxy::Proxy::process_client_connection@307] Writing bytes=11040 fd=5
+2025-12-08 11:38:55.633 DEBUG [80654] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=6
+2025-12-08 11:38:55.633 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 1380static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download
+2025-12-08 11:38:55.634 DEBUG [80642] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=5
+2025-12-08 11:38:55.636 DEBUG [80654] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=6
+2025-12-08 11:38:55.636 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 4140static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download
+2025-12-08 11:38:55.637 DEBUG [80654] [proxy::Proxy::process_client_connection@307] Writing bytes=1380 fd=6
+2025-12-08 11:38:55.637 DEBUG [80642] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=5
+2025-12-08 11:38:55.638 DEBUG [80642] [proxy::Proxy::process_client_connection@307] Writing bytes=1380 fd=5
+2025-12-08 11:38:55.638 DEBUG [80642] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=5
+2025-12-08 11:38:55.639 DEBUG [80654] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=6
+2025-12-08 11:38:55.639 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 2760static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download
+2025-12-08 11:38:55.639 DEBUG [80654] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=6
+2025-12-08 11:38:55.644 DEBUG [80654] [proxy::Proxy::process_client_connection@307] Writing bytes=4140 fd=6
+2025-12-08 11:38:55.644 DEBUG [80654] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=6
+2025-12-08 11:38:55.644 DEBUG [80642] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=5
+2025-12-08 11:38:55.646 DEBUG [80642] [proxy::Proxy::process_client_connection@307] Writing bytes=4140 fd=5
+2025-12-08 11:38:55.646 DEBUG [80642] [proxy::Proxy::process_client_connection@332] Waiting for data on cv fd=5
+2025-12-08 11:38:55.647 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 2760static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download
+2025-12-08 11:38:55.647 DEBUG [80642] [proxy::Proxy::process_client_connection@335] WAKE UP for cv fd=5
+2025-12-08 11:38:55.649 DEBUG [80642] [proxy::Proxy::process_client_connection@307] Writing bytes=2760 fd=5
+2025-12-08 11:38:55.650 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 5520static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download
+2025-12-08 11:38:55.651 DEBUG [80642] [proxy::Proxy::process_client_connection@307] Writing bytes=2760 fd=5
+2025-12-08 11:38:55.651 DEBUG [80643] [proxy::Proxy::process_resource_connection@383] read from resource 1380static.kremlin.ruhttp://static.kremlin.ru/media/events/video/ru/video_low/jLBemVF8Wv4ILmgIHCA890DmfZjfSKyv.mp4?download

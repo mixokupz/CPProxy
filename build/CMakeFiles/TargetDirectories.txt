@@ -1,0 +1,3 @@
+/home/vboxuser/Desktop/cproxy/build/CMakeFiles/cproxy.dir
+/home/vboxuser/Desktop/cproxy/build/CMakeFiles/edit_cache.dir
+/home/vboxuser/Desktop/cproxy/build/CMakeFiles/rebuild_cache.dir
