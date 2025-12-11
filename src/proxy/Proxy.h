@@ -291,58 +291,47 @@ namespace proxy {
                 proxy->cache_lock.unlock();
 
                 size_t already_written = 0;
+		
+		while (true) {
 
-                cache_entry->lock.lock();
-                while (true) {
-                    if (cache_entry->state == CacheEntry::State::FAILED) {
-                        cache_entry->lock.unlock();
-                        cache_entry->listeners_count.change(-1);
-                        throw_errno("failed server", true);
-                    }
+		    cache_entry->lock.lock();
 
-                    size_t to_write = std::min(cache_entry->size - already_written, BUF_SIZE);
-                    memcpy(buf, cache_entry->data + already_written, to_write);
+		    if (cache_entry->state == CacheEntry::State::FAILED) {
+		        cache_entry->lock.unlock();
+		        cache_entry->listeners_count.change(-1);
+		        throw_errno("failed server", true);
+		    }
+
+		    while (already_written == cache_entry->size &&
+		           cache_entry->state == CacheEntry::State::LOADING) {
+		        cache_entry->data_change_cv.wait(cache_entry->lock);
+		    }
+
+		    size_t available = cache_entry->size - already_written;
+
+		    if (available == 0 && cache_entry->state == CacheEntry::State::SUCCESS) {
+		        cache_entry->lock.unlock();
+		        break;
+		    }
+
+		    size_t to_write = std::min(available, BUF_SIZE);
+
+		    memcpy(buf, cache_entry->data + already_written, to_write);
+
 		    cache_entry->lock.unlock();
 
-                    PLOGD << "Writing bytes=" << to_write << " fd=" << client_fd;
-                    auto written_count = write(client_fd, buf, to_write);
+		    auto written_count = write(client_fd, buf, to_write);
 
-                    if (written_count < 0) {
-                        cache_entry->listeners_count.change(-1);
-                        throw_errno("Failed to write()");
-                    }
+		    if (written_count <= 0) {
+		        cache_entry->listeners_count.change(-1);
+		        throw_errno("Failed to write()");
+		    }
 
-                    if (written_count != to_write) {
-                        cache_entry->listeners_count.change(-1);
-                        throw_errno("Failed to write, written_count != to_write", true);
-                    }
+		    already_written += written_count;
+		}
 
-                    already_written += written_count;
+		cache_entry->listeners_count.change(-1);
 
-                    cache_entry->lock.lock();
-                    auto is_already_all = already_written == cache_entry->size;
-                    if (cache_entry->state == CacheEntry::State::SUCCESS) {
-                        if (is_already_all) {
-                            break;
-                        } else {
-                            continue;
-                        }
-                    } else if (cache_entry->state == CacheEntry::State::LOADING) {
-                        if (is_already_all) {
-                            PLOGD << "Waiting for data on cv fd=" << client_fd;
-                            do {
-                                cache_entry->data_change_cv.wait(cache_entry->lock);
-                                PLOGD << "WAKE UP for cv fd=" << client_fd;
-                            } while (cache_entry->state == CacheEntry::State::LOADING &&
-                                     already_written == cache_entry->size);
-                        } else {
-                            continue;
-                        }
-                    }
-                }
-
-                cache_entry->listeners_count.change(-1);
-                cache_entry->lock.unlock();
             } catch (const std::system_error& exception) {
                 PLOGW << "Client processing error: " << exception.what() << " " << client_fd;
                 send_http_error(client_fd, 500, exception.what());
