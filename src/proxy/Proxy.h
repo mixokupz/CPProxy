@@ -292,7 +292,7 @@ namespace proxy {
 
                 size_t already_written = 0;
 		
-		while (true) {
+		while (!proxy->is_shutting_down()) {
 
 		    cache_entry->lock.lock();
 
